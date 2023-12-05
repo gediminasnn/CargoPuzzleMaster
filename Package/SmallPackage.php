@@ -1,4 +1,5 @@
 <?php
+
 require_once __ROOT__ . "/Package/AbstractPackage.php";
 
 class SmallPackage extends AbstractPackage {

@@ -27,7 +27,7 @@ class PackingAlgorithm
         return $containersUsed;
     }
 
-    private function packIntoContainer(AbstractContainer $container, array $packages, bool $forcePack = false): array
+    private function packIntoContainer(AbstractContainer $container, array $packages): array
     {
         $containerWidth = $container->getWidth();
         $rowPackages = $this->fillWidth($packages, $containerWidth);
@@ -95,4 +95,3 @@ class PackingAlgorithm
         return ['packed' => $packed, 'remaining' => $remaining];
     }
 }
-?>
